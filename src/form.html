@@ -2,16 +2,38 @@
 <html>
     <head>
         <title>Projeto Exemplo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/form.css">
     </head>
     <body>
         <header class="cabecalho">
-            <img src="../assets/img/logo.png" >
+            <img src="../assets/img/logo.png">
         </header>
         <section class="menu">
             <a href="../index.html">Listagem</a>
             <a href="./form.html">Cadastrar</a>
         </section>
-        Meu Formulário
+        <section>
+            <form class="formulario" action="../index.html">
+                <div class="linha-formulario">
+                    <label class="label-grande" for="name">Nome:</label>
+                    <input name="name" id="name" required type="text">
+                </div>
+                <div class="linha-formulario">
+                    <label class="label-grande" for="phone">Telefone:</label>
+                    <input name="phone" id="phone" required type="tel">
+                </div>
+                <div class="linha-formulario" style="display: flex;">
+                    <label class="label-grande">Experiência Prévia:</label>
+                    <div style="display:inline-block; width: 40%;">
+                        <input type="radio" name="xp" id="xp-yes"><label for="xp-yes">Sim</label>
+                        <br>
+                        <input type="radio" name="xp" id="xp-no"><label for="xp-no">Não</label>
+                    </div>
+                </div>
+                <input type="submit" value="Salvar">
+            </form>
+        </section>
     </body>
 </html>

@@ -1,0 +1,14 @@
+.lista {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.lista th {
+    vertical-align: top;
+    background-color: black;
+    color: white;
+}
+
+.lista tr td {
+    padding: 5px;
+}
