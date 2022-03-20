@@ -36,9 +36,9 @@ function desenhaTabela() {
         let tbody = document.querySelector("table.lista tbody");
         // tinha utilizado anteriormente o nth-child(even) no css porém no github pages parece que não suporta ai deixei como o professor tinha feito
         tbody.innerHTML += `
-            <tr class="dinamic-content" style="background-color: #${
-                person % 2 == 0 ? "fff" : "eee"
-            }>
+            <tr class="dinamic-content" style="background-color: ${
+                people % 2 == 0 ? "#fff" : "#eee"
+            }">
                 <td>${people[person].name}</td>
                 <td>${people[person].tel}</td>
                 <td>${expColor(people[person].xp)}</td>
