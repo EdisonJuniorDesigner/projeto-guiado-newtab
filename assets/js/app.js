@@ -43,7 +43,7 @@ function desenhaTabela() {
                 <td>${expColor(people[person].xp)}</td>
                 <td>
                     <button onclick="deleteUser(${person})">Excluir</button>
-                    <a href="../../src/form.html?person=${person}">Editar</a>
+                    <a href="form.html?person=${person}">Editar</a>
                 </td>
             </tr>
         `;
