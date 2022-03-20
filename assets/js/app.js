@@ -32,6 +32,11 @@ function desenhaTabela() {
         element.remove();
     });
 
+    /* usando url do github pages para conseguir linkar o arquivo corretamente
+
+    url original <a href="../../src/form.html?person=${person}">Editar</a>
+    */
+
     for (person in people) {
         let tbody = document.querySelector("table.lista tbody");
         tbody.innerHTML += `
