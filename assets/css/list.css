@@ -5,10 +5,15 @@
 
 .lista th {
     vertical-align: top;
+    text-align: left;
     background-color: black;
     color: white;
 }
 
 .lista tr td {
     padding: 5px;
+}
+
+.lista tr:nth-child(even) {
+    background-color: #ccc;
 }
